@@ -80,10 +80,10 @@
 
 #content-2 hr{
 	border: 5px solid #ff0;
-	width: 430px;
+	width: 420px;
 	position: relative;
 	top: -20px;
-	left: 5px;
+	left: 87px;
 }
 
 .my-image{
@@ -98,21 +98,23 @@
 }
 
 .hello-2{
-	font-size: 35px;
+	font-size: 30px;
 	color: #ff0;
 }
 
 .page-2{
 	text-align: center;
-	background: #fff;
-	/*background: rgba( 256, 156, 256, 0.5);*/
+	margin-top: 200px;
 }
 
-.page-2 h2{
+.page-2 h2, .page-3 h2{
 	font-family: 'Rock Salt', cursive;
+	font-size: 25px;
+	font-weight: bold;
 	color: #00f;
-	margin-top: 100px;
+	margin-top: 35px;
 	z-index: 1;
+	text-align: center;
 	animation: bounce1 1s infinite alternate;
   -webkit-animation: bounce1 1s infinite alternate;
 
@@ -126,7 +128,7 @@
   }
 }
 
-.page-2 hr{
+.page-2 hr, .page-3 hr{
 	border: 2px solid #ff0;
 	width: 250px;
 	animation: bounce 1s infinite alternate;
@@ -152,17 +154,67 @@
 }
 
 #content-3, #content-4{
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .about-image{
-	height: 500px;
-	width: 500px;
+	height: 550px;
+	width: 390px;
 }
 
 .my-info{
 	font-family: 'Pompiere', cursive;
-	font-size: 30px;
-	padding: 10px;
+	font-size: 28px;
+	color: #0d1a00;
+	padding: 12px;
 	font-weight: bold;
+	/*border: 3px solid #000;*/
+	border-radius: 10px;
+	background: rgba(135, 137, 138, 0.7);
 }
+
+.page-3{
+	margin-top: 20px;
+	color: #D5E5EB;
+	
+}
+#resume-page{
+	background: url('../images/background-1.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.page-3 h3{
+	font-weight: bold;
+	font-size: 30px;
+	font-family: 'Pompiere', cursive;
+	margin-top: 55px;
+	text-decoration: underline;
+	color: #A1C7D4;
+}
+
+.page-3 h4{
+	margin: 25px 0 15px 0;
+	font-weight: bold;
+	color: #A1C7D4;
+
+}
+
+.page-3 h5{
+	font-weight: bold;
+	font-size: 18px;
+	
+}
+
+.page-3 ul li, .page-3 ul li a{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.bull{
+	height: 800px;
+	background: #fff;
+}
+

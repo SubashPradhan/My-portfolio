@@ -6,6 +6,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,24 +15,36 @@
 	<title>Subash Pradhan - Portfolio</title>
 </head>
 <body>
-	<div id="container">
+	<div id="video">
 		<video class="video" autoplay="true" loop>
 			<source src="videos/Working-Man.mp4" type="video/mp4">
 			<source src="videos/Working-Man.webm" type="video/webm">
 		</video>
-
-		<div id="my-page" class="page-1">
+	</div>	
+	<nav class="navbar-fixed">
+		<div id="homesection" >
 			<div id="navbar">
 				<img class="logo" src="images/my-logo.png" alt="my-logo1">				
 				<ul>
-					<li><input class="search" type="text" name="search" placeholder="Search my works.."></li>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#resume">Resume</a></li>
-					<li><a href="#contact">Contact</a></li>			
+					<li>
+						<form id="cse-search-box-only" action="http://google.com?cref={http://nycda.zone/subash187/}">
+						    <input type="hidden" name="cx" value="014624506685165915712:brcyjkvz47k" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input  class="search" type="text" name="q"/>
+							<!-- <input type="submit" name="sa" value="Search" /> -->
+						</form>
+					</li>
+					<li><a id="home" href="#homesection">Home</a></li>
+					<li><a id="about" href="#aboutsection">About</a></li>
+					<li><a id="resume" href="#resumesection">Resume</a></li>
+					<li><a id="contact" href="#contactsection">Contact</a></li>			
 				</ul>
 			</div>
-			<div class="row" id="page-1-content">
+		</div>
+	</nav>
+	<header>		
+		<div class="container">	
+			<div class="row page-1">
 				<div id="content-1" class="col-lg-6">
 				</div>
 				<div id="content-2" class="col-lg-6">
@@ -39,31 +52,130 @@
 					<hr>		
 				</div>
 			</div>
-		</div>	
-		<div id="about" class="row page-2">
-			<h2>ABOUT ME</h2>
-			<hr>	
-			<div id="content-3" class="col-lg-6">
-				<img class="about-image" src="images/about-image.png" alt="about-image">
-			</div>
-			<div id="content-4" class="col-lg-6">
-				<p class="my-info">	
-					Hi this is Subash Pradhan. I am originally from kathmandu, Nepal and currently 
-					living in Amsterdam, Netherlands. I am interested in computers, technologies and love to 
-					discover new things specially with so called coding. Recently, I did certificate course at NYCDA
-					(New York Code & Design Academy) based on Front-End-Development. So, overall with the help of the course
-					I have mainly good knowledge of HTML, CSS & JAVASCRIPT/JQUERY. Apart from it I also have basic ideas of 
-					SASS, AJAX, JSON, RUBY etc... to cover overall designing of web development. About my experience, I have
-					worked as Technical Officer in a software company called Software Systems Nepal(SSN) for 3 years in Nepal.
-					With which I have experience of Computer Hardware & Networkings, Software installations, Troubleshootings,
-					MYSQL and more. My target is to work for developing companies and collect new ideas/experience making 
-					myself more better on the land of coding. I am a determined, flexible guy who believes hard work is the 
-					key to success with the flow of time!!! 
-				</p>	
-			</div>			
-		</div>	
-	</div>
+		</div>
+	</header>
 
+	<section id="about-page">
+		<div class="container">			
+			<div id="aboutsection" class="row page-2">
+				<h2>ABOUT - ME</h2>
+				<hr>
+
+				<div id="content-3" class="col-lg-5 col-md-12">
+					<img class="about-image" src="images/about-image.png" alt="about-image">
+				</div>
+
+				<div id="content-4" class="col-lg-7 col-md-12">
+					<p class="my-info">	
+						Hi this is Subash Pradhan. I am originally from kathmandu, Nepal and currently 
+						living in Amsterdam, Netherlands. I am interested in computers, technologies and love to 
+						discover new things specially with so called coding. Recently, I did certificate course at NYCDA
+						(New York Code & Design Academy) based on Front-End-Development. So, overall with the help of the course
+						I have mainly good knowledge of HTML, CSS & JAVASCRIPT/JQUERY. Apart from it I also have basic ideas of 
+						SASS, AJAX, JSON, RUBY etc... to cover overall designing of web development. About my experience, I have
+						worked as Technical Officer in a software company called Software Systems Nepal(SSN) for 3 years in Nepal.
+						With which I have experience of Computer Hardware & Networkings, Software installations, Troubleshootings,
+						MYSQL and more. My target is to work for developing companies and collect new ideas/experience making 
+						myself more better on the land of coding. I am a determined, flexible guy who believes hard work is the 
+						key to success with the flow of time!!! 
+					</p>	
+				</div>			
+			</div>
+		</div>	
+	</section>
+			
+	<section id = "resume-page">	
+		<div class="container">	
+			<div id="resumesection" class="row page-3">
+				<h2>MY - RESUME</h2>
+				<hr>	
+				<div id="content-5" class="col-lg-6">			
+					<div class="experience">
+						<h3>Experience:</h3>
+						<h4>Software Systems Nepal (P) Ltd.<br />
+						(2010 - 2013)</h4>
+						<h5>Technical Officer:</h5>
+						<ul>
+							<li>Computer Hardware & Networking</li>
+							<li>Computer Assemble, Windows OS Installation</li>
+							<li>Network Installation</li>
+							<li>Troubleshooting</li>
+							<li>Manakamana Business Accounting 7.5 </li>
+							<li>Inventory Management System (IMS) Troubleshooting</li>
+							<li>Financial Accounting Systems Troubleshooting</li>
+							<li>Customer Care & Relationship Development</li>
+						</ul>	
+					</div>		
+					<div class="skills">
+						<h3>Software Skills:</h3>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>SASS</li>
+							<li>JAVASCRIPT</li>
+							<li>JQUERY</li>
+							<li>Basic SQL</li>
+							<li>Microsoft Office (Word, Excel)</li>
+						</ul>
+						<h3>Language Skills:</h3>
+						<ul>
+							<li>Read, Write & Speak Fluent English & Nepali</li>
+							<li>Learning Dutch</li>
+						</ul>					
+					</div>
+					<div class="reference">
+						<h3>Reference:</h3>
+						<ul>
+							<li>
+								<a href="https://github.com/SubashPradhan" target="_blank"> Github: Https://github.com/SubashPradhan</a>
+							</li>
+							<li>
+								<a href="http://www.softsysnepal.com/" target="_blank">
+								Software Systems Nepal (P) Ltd.
+								Kathmandu, Nepal (977) 01-4016768</a>
+							</li>
+						</ul>					
+					</div>
+				</div>
+
+				<div id="content-6" class="col-lg-6">
+					<div class="education">
+					<h3>Education:</h3>
+						<h3>NYCDA (New York Code & Design Academy)</h3>
+						<h4>Year: September 2016</h4>
+						<ul>
+							<li>Web Development 100, Front-End 101</li>
+							<li>Certificate Program</li>
+						</ul>
+						<h3>Nobel College</h3>
+						<h4>Year: 2008 - 2010 <br />+2 (Grade 11 & 12)</h4>
+						<ul>
+							<li>Physics Theory & Practical</li>
+							<li>Chemistry Theory & Practical</li>
+							<li>Biology Theory & Practical</li>
+							<li>English</li>
+						</ul>
+						<h3>Nobel Academy Higher Secondary School</h3>
+						<h4>Year: 2003 - 2007<br />S.L.C (School Leaving Certificate)
+						</h4>
+						<ul>
+							<li>Science</li>
+							<li>Mathmatics</li>
+							<li>Additional Maths</li>
+							<li>Computer Science</li>
+							<li>Social Studies</li>
+							<li>Health, Population & Environment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section>
+		<div class="bull">
+			
+		</div>
+	</section>
 	
 
 </body>
