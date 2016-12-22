@@ -6,7 +6,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,7 +14,7 @@
 	<title>Subash Pradhan - Portfolio</title>
 </head>
 <body>
-	<div id="video">
+	<div id="video-bg">
 		<video class="video" autoplay="true" loop>
 			<source src="videos/Working-Man.mp4" type="video/mp4">
 			<source src="videos/Working-Man.webm" type="video/webm">
@@ -25,19 +24,21 @@
 		<div id="homesection" >
 			<div id="navbar">
 				<img class="logo" src="images/my-logo.png" alt="my-logo1">				
-				<ul>
+				<ul class="topnav">
+					<li class="icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					</li>
 					<li>
 						<form id="cse-search-box-only" action="http://google.com?cref={http://nycda.zone/subash187/}">
 						    <input type="hidden" name="cx" value="014624506685165915712:brcyjkvz47k" />
 							<input type="hidden" name="ie" value="UTF-8" />
-							<input  class="search" type="text" name="q"/>
-							<!-- <input type="submit" name="sa" value="Search" /> -->
+							<input  class="search" type="text" placeholder="search for my works..." name="q"/>
 						</form>
 					</li>
 					<li><a id="home" href="#homesection">Home</a></li>
 					<li><a id="about" href="#aboutsection">About</a></li>
 					<li><a id="resume" href="#resumesection">Resume</a></li>
-					<li><a id="contact" href="#contactsection">Contact</a></li>			
+					<li><a id="contact" href="#contactsection">Contact</a></li>	
+							
 				</ul>
 			</div>
 		</div>
@@ -46,6 +47,12 @@
 		<div class="container">	
 			<div class="row page-1">
 				<div id="content-1" class="col-lg-6">
+				</div>
+				<div id="mobile-content-1" class="col-lg-6">
+					<h1 class="hello">Hello!!!</h1>
+					<p class="hello-2">Welcome to my Portfolio !!!</p>
+					<p class="hello-2">I am Subash Pradhan !!!</p>
+					<p class="hello-2">Nice To Meet You !!!</p>
 				</div>
 				<div id="content-2" class="col-lg-6">
 					<img class="my-image" src="images/my-image.png" alt="my-image">		
@@ -66,6 +73,14 @@
 				</div>
 
 				<div id="content-4" class="col-lg-7 col-md-12">
+					<form>
+						<span class="views">
+						<input type="radio" class="normal-view" checked="checked" value="1">Timeline view...
+						</span>
+						<span class="views">
+	 					<input type="radio" class="full-view" value="2">Full view...
+	 					</span>
+ 					</form>
 					<p class="my-info">	
 						Hi this is Subash Pradhan. I am originally from kathmandu, Nepal and currently 
 						living in Amsterdam, Netherlands. I am interested in computers, technologies and love to 
@@ -76,9 +91,8 @@
 						worked as Technical Officer in a software company called Software Systems Nepal(SSN) for 3 years in Nepal.
 						With which I have experience of Computer Hardware & Networkings, Software installations, Troubleshootings,
 						MYSQL and more. My target is to work for developing companies and collect new ideas/experience making 
-						myself more better on the land of coding. I am a determined, flexible guy who believes hard work is the 
-						key to success with the flow of time!!! 
-					</p>	
+						myself more better on the land of coding. I am a determined, flexible young man who believes hard work is the key to success with the flow of time!!! 
+					</p>
 				</div>			
 			</div>
 		</div>	
@@ -89,11 +103,11 @@
 			<div id="resumesection" class="row page-3">
 				<h2>MY - RESUME</h2>
 				<hr>	
-				<div id="content-5" class="col-lg-6">			
+				<div id="content-5" class="col-lg-6 col-xs-6">			
 					<div class="experience">
-						<h3>Experience:</h3>
-						<h4>Software Systems Nepal (P) Ltd.<br />
-						(2010 - 2013)</h4>
+						<h3><i class="fa fa-building" aria-hidden="true"> Experience:</i></h3>
+						<h3>Software Systems Nepal (P) Ltd.</h3>
+						<h4>Year: 2010 - 2013</h4>
 						<h5>Technical Officer:</h5>
 						<ul>
 							<li>Computer Hardware & Networking</li>
@@ -107,7 +121,7 @@
 						</ul>	
 					</div>		
 					<div class="skills">
-						<h3>Software Skills:</h3>
+						<h3><i class="fa fa-star" aria-hidden="true">  Software Skills:</i></h3>
 						<ul>
 							<li>HTML</li>
 							<li>CSS</li>
@@ -117,14 +131,14 @@
 							<li>Basic SQL</li>
 							<li>Microsoft Office (Word, Excel)</li>
 						</ul>
-						<h3>Language Skills:</h3>
+						<h3><i class="fa fa-language" aria-hidden="true"> Language Skills:</i></h3>
 						<ul>
 							<li>Read, Write & Speak Fluent English & Nepali</li>
 							<li>Learning Dutch</li>
 						</ul>					
 					</div>
 					<div class="reference">
-						<h3>Reference:</h3>
+						<h3><i class="fa fa-certificate" aria-hidden="true">   Reference:</i></h3>
 						<ul>
 							<li>
 								<a href="https://github.com/SubashPradhan" target="_blank"> Github: Https://github.com/SubashPradhan</a>
@@ -138,9 +152,9 @@
 					</div>
 				</div>
 
-				<div id="content-6" class="col-lg-6">
+				<div id="content-6" class="col-lg-6 col-xs-6">
 					<div class="education">
-					<h3>Education:</h3>
+					<h3><i class="fa fa-graduation-cap" aria-hidden="true">   Education:</i></h3>
 						<h3>NYCDA (New York Code & Design Academy)</h3>
 						<h4>Year: September 2016</h4>
 						<ul>
@@ -171,12 +185,5 @@
 			</div>
 		</div>	
 	</section>
-	<section>
-		<div class="bull">
-			
-		</div>
-	</section>
-	
-
 </body>
 </html>

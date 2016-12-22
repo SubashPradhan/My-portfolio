@@ -10,9 +10,9 @@
 	z-index: -1;
 }
 .page-1{
-	z-index:1
-	
+	z-index:1;	
 }
+
 #navbar{
 	position: fixed;
 	width: 100%;
@@ -48,15 +48,19 @@
 	transition: 0.5s ease-in-out;
 }
 
+.icon i{
+	display: none;
+}
+
 .search {
 	position: absolute;
 	right: 520px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 8px;
-    width: 200px;
-     -webkit-transition: width 2.3s ease-in-out;
-    transition: width 2.3s ease-in-out;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	padding: 8px;
+	width: 200px;
+	-webkit-transition: width 2.3s ease-in-out;
+	transition: width 2.3s ease-in-out;
 }
 
 .logo{
@@ -68,10 +72,13 @@
 
 #content-1, #content-2{
 	font-size: 25px;
-    text-align: center;
-    font-family: 'Rock Salt', cursive;
-    margin-top: 170px;
-    font-weight: bold;
+	text-align: center;
+	font-family: 'Rock Salt', cursive;
+	margin-top: 170px;
+	font-weight: bold;
+}
+#mobile-content-1{
+	display: none;
 }
 
 #content-2{
@@ -116,45 +123,45 @@
 	z-index: 1;
 	text-align: center;
 	animation: bounce1 1s infinite alternate;
-  -webkit-animation: bounce1 1s infinite alternate;
+	-webkit-animation: bounce1 1s infinite alternate;
 
 }
 @keyframes bounce1 {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-15px);
-  }
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
 }
 
 .page-2 hr, .page-3 hr{
 	border: 2px solid #ff0;
 	width: 250px;
 	animation: bounce 1s infinite alternate;
-  -webkit-animation: bounce 1s infinite alternate;
+	-webkit-animation: bounce 1s infinite alternate;
 
 }
 
 @keyframes bounce {
-  from {
-    transform: translateX(-10px);
-  }
-  to {
-    transform: translateX(20px);
-  }
+	from {
+		transform: translateX(-10px);
+	}
+	to {
+		transform: translateX(20px);
+	}
 }
 @-webkit-keyframes bounce {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(20px);
-  }
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(20px);
+	}
 }
 
-#content-3, #content-4{
-	margin-top: 25px;
+#content-3{
+	margin-top: 45px;
 }
 
 .about-image{
@@ -167,30 +174,45 @@
 	font-size: 28px;
 	color: #0d1a00;
 	padding: 12px;
+	margin-top: 10px;
 	font-weight: bold;
-	/*border: 3px solid #000;*/
 	border-radius: 10px;
 	background: rgba(135, 137, 138, 0.7);
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.full-screen{
+	transform: scale(2.0, 1.0) translateX(-120px);
+}
+
+.views{
+	font-size: 18px;
+	margin: 20px;		
+}
+
+input[type="radio"]{
+	cursor: pointer;
+	font-size: 25px;
 }
 
 .page-3{
 	margin-top: 20px;
 	color: #D5E5EB;
-	
+
 }
 #resume-page{
 	background: url('../images/background-1.jpg');
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;
-	
+	background-size: cover;	
 }
 
 .page-3 h3{
 	font-weight: bold;
 	font-size: 30px;
 	font-family: 'Pompiere', cursive;
-	margin-top: 55px;
+	margin-top: 35px;
 	text-decoration: underline;
 	color: #A1C7D4;
 }
@@ -213,8 +235,131 @@
 	font-weight: 700;
 }
 
-.bull{
-	height: 800px;
-	background: #fff;
-}
 
+
+
+
+@media all and (max-width: 1200px) {
+
+	.video{
+		display: none;
+	}
+	header{
+		background: url('../images/background-4.jpg');
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	
+	#navbar{
+		position: fixed;
+		width: 100%;
+		height: auto;
+		z-index: 1;
+		background: rgba(77, 77, 51, 0.8);
+		border-top: 5px solid blue;	
+		-webkit-transition: background 0.7s ease-in-out;
+		transition: background 0.7s ease-in-out;
+	}
+	#navbar ul .icon{
+		float: right;
+		display: inline-block;
+    }
+
+	#navbar li{
+		display: none;
+	}
+
+	#navbar .responsive li{
+		display: block;
+   		text-align: left;
+    }
+
+	#navbar li a:hover{
+		color: #fff;
+		transition: 0.5s ease-in-out;
+	}
+
+	.icon i{
+	display: block;	
+	color: #fff;
+	}
+
+	.logo{
+		margin-left: 0;
+		height: 100px;
+		width: 180px;
+		margin-top: 0px;
+	}
+
+	#mobile-content-1{
+		display: block;
+		font-size: 25px;
+		text-align: center;
+		font-family: 'Rock Salt', cursive;
+		margin-top: 170px;
+		font-weight: bold;
+	}
+	#content-1, #content-2{
+		display: none;
+	}
+
+	.hello{
+		margin-bottom: 35px;
+		font-size: 60px;
+		color: #00f;
+	}
+
+	.hello-2{
+		padding: 5px;
+		font-size: 20px;
+		color: #ff0;
+	}
+
+	.page-2{
+		margin-top: 0px;
+	}
+
+	#content-3{
+		display: none;
+	}
+
+	.my-info{
+		font-size: 25px;
+		color: #0d1a00;
+		padding: 5px;
+		margin-top: 0px;
+		width: 100%;
+	}
+
+	.views{
+		display: none;		
+	}
+
+	input[type="radio"]{
+		cursor: pointer;
+		font-size: 25px;
+	}
+
+	.page-3{
+		margin-top: 20px;
+		color: #D5E5EB;
+
+	}
+	#resume-page{
+		background: url('../images/background-1.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;	
+	}
+
+	.page-3 h3{
+		font-size: 22px;
+		margin-top: 15px;
+	}
+
+	.page-3 ul li, .page-3 ul li a{
+		font-size: 13px;
+
+	}
+}
