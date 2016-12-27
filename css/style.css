@@ -18,7 +18,7 @@
 	width: 100%;
 	height: 100px;
 	z-index: 1;
-	background: rgba(77, 77, 51, 0.2);
+	background: rgba(77, 77, 51, 0.7);
 	border-top: 5px solid blue;	
 	-webkit-transition: background 0.7s ease-in-out;
 	transition: background 0.7s ease-in-out;
@@ -32,11 +32,12 @@
 }
 
 #navbar li{
-	display: inline;
-
+	float: left;
+	
 }
 
-#navbar li a{
+#navbar li a{	
+	display: inline-block;
 	margin: 15px;
 	font-size: 25px;
 	text-decoration: none;
@@ -96,7 +97,7 @@
 .my-image{
 	height: 550px;
 	width: 750px;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 
 .hello{
@@ -122,7 +123,7 @@
 	margin-top: 35px;
 	z-index: 1;
 	text-align: center;
-	animation: bounce1 1s infinite alternate;
+	animation: bounce 1 1s infinite alternate;
 	-webkit-animation: bounce1 1s infinite alternate;
 
 }
@@ -236,53 +237,68 @@ input[type="radio"]{
 }
 
 
-
-
-
 @media all and (max-width: 1200px) {
 
 	.video{
 		display: none;
 	}
 	header{
-		background: url('../images/background-4.jpg');
+		background: url('../images/background-2.jpg');
 		background-position: center;
 		background-attachment: fixed;
 		background-size: cover;
 	}
 	
 	#navbar{
-		position: fixed;
-		width: 100%;
-		height: auto;
-		z-index: 1;
 		background: rgba(77, 77, 51, 0.8);
-		border-top: 5px solid blue;	
-		-webkit-transition: background 0.7s ease-in-out;
-		transition: background 0.7s ease-in-out;
+		height: auto;
+		-webkit-transition: all 0.8s ease-in-out;
+		transition: all 0.8s ease-in-out;
 	}
-	#navbar ul .icon{
+	
+	#navbar ul li a{
+		display: none;
+		
+   	}
+
+   	#navbar ul{
+		list-style-type: none; 
+		overflow: hidden;
+		float: none;
+		margin: 90px 0 0 0;
+	}
+
+   	.icon i{
 		float: right;
-		display: inline-block;
+		display: block;
+		margin: 30px 50px 0 0;
+		color: #fff;
+		cursor: pointer;
+		background: #00f;
+		border-radius: 8px;
+		width: 40px;
+		text-align: center;
     }
 
-	#navbar li{
-		display: none;
-	}
+   	#navbar .responsive li a{
+   		position: relative;
+   		display: block;
+    	text-align: left;
+    	margin: 5px;
+    }
 
 	#navbar .responsive li{
-		display: block;
-   		text-align: left;
-    }
-
+		float: none;
+		clear: all;
+	}	
+		
 	#navbar li a:hover{
 		color: #fff;
-		transition: 0.5s ease-in-out;
+		background-color: #000;
 	}
-
-	.icon i{
-	display: block;	
-	color: #fff;
+	.search {
+		position: fixed;
+		right: 0;
 	}
 
 	.logo{
@@ -290,6 +306,7 @@ input[type="radio"]{
 		height: 100px;
 		width: 180px;
 		margin-top: 0px;
+		position: fixed;
 	}
 
 	#mobile-content-1{
@@ -297,11 +314,17 @@ input[type="radio"]{
 		font-size: 25px;
 		text-align: center;
 		font-family: 'Rock Salt', cursive;
-		margin-top: 170px;
+		margin: 150px 0 120px 0;
 		font-weight: bold;
 	}
 	#content-1, #content-2{
 		display: none;
+	}
+
+	.image-mobile{
+		width: 200px;
+		height: 200px;
+		margin-bottom: 30px;
 	}
 
 	.hello{
@@ -317,7 +340,15 @@ input[type="radio"]{
 	}
 
 	.page-2{
-		margin-top: 0px;
+		margin: 25px 0 50px 0;
+	}
+
+	#about-page{
+		background: url('../images/background-4.jpg');
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+		margin-top: 2px;
 	}
 
 	#content-3{
@@ -342,7 +373,7 @@ input[type="radio"]{
 	}
 
 	.page-3{
-		margin-top: 20px;
+		margin-top: 0;
 		color: #D5E5EB;
 
 	}
@@ -351,10 +382,15 @@ input[type="radio"]{
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;	
+		margin-top: 2px;
 	}
 
-	.page-3 h3{
+	.page-3 h2{
 		font-size: 22px;
+		margin-top: 50px;
+	}
+	.page-3 h3{
+		font-size: 20px;
 		margin-top: 15px;
 	}
 

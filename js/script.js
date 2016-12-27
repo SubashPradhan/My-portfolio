@@ -3,7 +3,7 @@ $(document).ready(function() {
 // effect for search bar:	
 	$('.search').focusin(function() {
 		$('#navbar a').fadeOut(1500);
-		$('.search').css('width', '350px');
+		$('.search').css('width', '300px');
 	});
 
 	$('.search').focusout(function() {
@@ -71,9 +71,10 @@ $(document).ready(function() {
     });
 
     $('.icon').click(function() {
-    	$('.logo').fadeToggle();
+    	$('#navbar').addClass('navbar-height');
     	if($('.topnav').hasClass('topnav')){
     		$('.topnav').toggleClass('responsive');
+    		
     	}
     });
 
