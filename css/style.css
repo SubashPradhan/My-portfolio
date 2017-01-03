@@ -19,7 +19,7 @@
 	height: 100px;
 	z-index: 1;
 	background: rgba(77, 77, 51, 0.7);
-	border-top: 5px solid blue;	
+	border-top: 5px solid #5694f7;	
 	-webkit-transition: background 0.7s ease-in-out;
 	transition: background 0.7s ease-in-out;
 }
@@ -28,7 +28,7 @@
 	list-style-type: none; 
 	overflow: hidden;
 	float: right;
-	margin: 30px 50px 0 0;
+	margin: 18px 50px 0 0;
 }
 
 #navbar li{
@@ -41,7 +41,7 @@
 	margin: 15px;
 	font-size: 25px;
 	text-decoration: none;
-	color: #00f;
+	color: #5694f7;
 }
 
 #navbar li a:hover{
@@ -102,7 +102,7 @@
 
 .hello{
 	font-size: 80px;
-	color: #00f;
+	color: #0066ff;
 }
 
 .hello-2{
@@ -115,11 +115,11 @@
 	margin-top: 200px;
 }
 
-.page-2 h2, .page-3 h2{
+.page-2 h2, .page-3 h2, .page-4 h2{
 	font-family: 'Rock Salt', cursive;
 	font-size: 25px;
 	font-weight: bold;
-	color: #00f;
+	color: #5694f7;
 	margin-top: 35px;
 	z-index: 1;
 	text-align: center;
@@ -136,7 +136,7 @@
 	}
 }
 
-.page-2 hr, .page-3 hr{
+.page-2 hr, .page-3 hr, .page-4 hr{
 	border: 2px solid #ff0;
 	width: 250px;
 	animation: bounce 1s infinite alternate;
@@ -236,6 +236,68 @@ input[type="radio"]{
 	font-weight: 700;
 }
 
+#contact-page{
+	background: url('../images/background-4.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;	
+	margin-top: 2px;
+}
+#form{
+	border: 4px solid #000;
+	font-family: 'Pompiere', cursive;
+	font-size: 25px;
+	font-weight: 900;
+	background: url('../images/contact.png');
+}
+.straight-line{
+	float: left;
+	/*background: #113163;*/
+	background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
+	background: -ms-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
+	background: -moz-linear-gradient(bottom,rgba(0,0,,1),rgba(0,0,0,0.5));
+	font-size: 44px;
+	font-family: 'Pompiere', cursive;
+	font-weight: bold;
+	color: #ff0;
+
+	-ms-writing-mode: vertical-lr; 
+	-webkit-writing-mode: vertical-lr;
+	-moz-writing-mode: vertical-lr;
+	-ms-writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
+
+	-webkit-text-orientation: upright;
+	-moz-text-orientation: upright;
+	-ms-text-orientation: upright;
+	text-orientation: upright;
+	
+}
+
+.form-para{
+	margin-top: 18px;
+}
+
+#submit-button{
+	border-radius: 8px;
+	border-color: #5694f7;
+	background: green;
+	margin-left: 5px;
+	color: #fff;
+	font-size: 32px;
+}
+#form input, textarea{
+	background: rgba(0, 204, 255, 0.7);
+	border-color: #ff0;
+	border-radius: 8px;
+	margin: 0 0 4px 5px;
+}
+
+#form textarea{
+	margin-left: 5px;
+}
+
+
 
 @media all and (max-width: 1200px) {
 
@@ -243,7 +305,7 @@ input[type="radio"]{
 		display: none;
 	}
 	header{
-		background: url('../images/background-2.jpg');
+		background: url('../images/background-4.jpg');
 		background-position: center;
 		background-attachment: fixed;
 		background-size: cover;
@@ -274,7 +336,7 @@ input[type="radio"]{
 		margin: 30px 50px 0 0;
 		color: #fff;
 		cursor: pointer;
-		background: #00f;
+		background: #5694f7;
 		border-radius: 8px;
 		width: 40px;
 		text-align: center;
@@ -284,7 +346,7 @@ input[type="radio"]{
    		position: relative;
    		display: block;
     	text-align: left;
-    	margin: 5px;
+    	margin: 2px 0 0 -32px;
     }
 
 	#navbar .responsive li{
@@ -330,7 +392,7 @@ input[type="radio"]{
 	.hello{
 		margin-bottom: 35px;
 		font-size: 60px;
-		color: #00f;
+		color: #5694f7;
 	}
 
 	.hello-2{
@@ -378,10 +440,11 @@ input[type="radio"]{
 
 	}
 	#resume-page{
-		background: url('../images/background-1.jpg');
+		background: url('../images/background-4.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;	
+		background-repeat: no-repeat;
 		margin-top: 2px;
 	}
 
@@ -397,5 +460,12 @@ input[type="radio"]{
 	.page-3 ul li, .page-3 ul li a{
 		font-size: 13px;
 
+	}
+	#contact-page{
+		background: url('../images/background-4.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;	
+		margin-top: 2px;
 	}
 }

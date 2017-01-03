@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
 // effect for search bar:	
-	$('.search').focusin(function() {
-		$('#navbar a').fadeOut(1500);
-		$('.search').css('width', '300px');
-	});
+$('.search').focusin(function() {
+	$('#navbar a').fadeOut(1500);
+	$('.search').css('width', '300px');
+});
 
-	$('.search').focusout(function() {
-		$('#navbar a').fadeIn(3000);
-		$('.search').css('width', '200px');
-	});
+$('.search').focusout(function() {
+	$('#navbar a').fadeIn(3000);
+	$('.search').css('width', '200px');
+});
 
 	// typing text effect with library:
 	$("#content-1").typed({
@@ -55,29 +55,33 @@ $(document).ready(function() {
 
 	//radio button function:	
 	$('.full-view').click(function(){		
-        $('.my-info').addClass('full-screen');
-        $('.about-image').fadeOut(1200);
-        $('.full-view').prop('checked', true);
-        $('.normal-view').prop('checked', false);      		 
-            
-    });
+		$('.my-info').addClass('full-screen');
+		$('.about-image').fadeOut(1200);
+		$('.full-view').prop('checked', true);
+		$('.normal-view').prop('checked', false);      		 
+
+	});
 
 	$('.normal-view').click(function(){		
-        $('.my-info').removeClass('full-screen');
-        $('.about-image').fadeIn(1200);
-        $('.normal-view').prop('checked', true);
-        $('.full-view').prop('checked', false);      		 
-            
-    });
+		$('.my-info').removeClass('full-screen');
+		$('.about-image').fadeIn(1200);
+		$('.normal-view').prop('checked', true);
+		$('.full-view').prop('checked', false);      		 
 
-    $('.icon').click(function() {
-    	$('#navbar').addClass('navbar-height');
-    	if($('.topnav').hasClass('topnav')){
-    		$('.topnav').toggleClass('responsive');
-    		
-    	}
-    });
+	});
+
+	$('.icon').click(function() {
+		$('#navbar').addClass('navbar-height');
+		if($('.topnav').hasClass('topnav')){
+			$('.topnav').toggleClass('responsive');
+
+		}
+	});
+
+	var frmvalidator = new Validator("contactform");
+	frmvalidator.addValidation("name", "req", "Please provide your name");
+	frmvalidator.addValidation("email", "req", "Please provide your email");
+	frmvalidator.addValidation("email", "email", "Please enter a valid email address");
 
 });
 
-	

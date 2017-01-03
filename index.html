@@ -6,6 +6,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
+	<script src="js/email-validator.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -100,7 +101,7 @@
 		</div>	
 	</section>
 			
-	<section id = "resume-page">	
+	<section id ="resume-page">	
 		<div class="container">	
 			<div id="resumesection" class="row page-3">
 				<h2>MY - RESUME</h2>
@@ -156,7 +157,7 @@
 
 				<div id="content-6" class="col-lg-6 col-xs-6">
 					<div class="education">
-					<h3><i class="fa fa-graduation-cap" aria-hidden="true">   Education:</i></h3>
+						<h3><i class="fa fa-graduation-cap" aria-hidden="true"> Education:</i></h3>
 						<h3>NYCDA (New York Code & Design Academy)</h3>
 						<h4>Year: September 2016</h4>
 						<ul>
@@ -187,5 +188,41 @@
 			</div>
 		</div>	
 	</section>
+	<section id="contact-page">
+		<div class="container">
+			<div id="contactsection" class="row page-4">
+				<h2>CONTACT - ME</h2>
+				<hr>
+				<div id="content-6" class="col-lg-6">
+					<span class="straight-line">
+						CONTACT ME
+					</span>
+					<form method="POST" name="contactform" action="http://www.elwebman.nl/subash/myphp.php" id="form">
+						<p class="form-para">
+							Full Name * :
+						</p>	
+						<input id="Full-Name" type="text" name="name" value=" " />
+
+						<p class="form-para">
+							Your E-mail Address * :
+						</p>	
+						<input id="Email" type="text" name="email" value=" " size="30" />
+
+						<p class="form-para">
+							Write your message here:
+						</p>	 
+
+						<textarea rows="5" cols="35" name="message" id="textarea_1"></textarea><br>
+						<!-- <input id="submit-button" type="button" value="submit"> -->
+						<button id="submit-button">Send Message</button>
+					</form>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+
 </body>
 </html>
