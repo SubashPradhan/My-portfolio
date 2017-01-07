@@ -252,7 +252,6 @@ input[type="radio"]{
 }
 .straight-line{
 	float: left;
-	/*background: #113163;*/
 	background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
 	background: -ms-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
 	background: -moz-linear-gradient(bottom,rgba(0,0,,1),rgba(0,0,0,0.5));
@@ -260,7 +259,7 @@ input[type="radio"]{
 	font-family: 'Pompiere', cursive;
 	font-weight: bold;
 	color: #ff0;
-
+	
 	-ms-writing-mode: vertical-lr; 
 	-webkit-writing-mode: vertical-lr;
 	-moz-writing-mode: vertical-lr;
@@ -282,11 +281,12 @@ input[type="radio"]{
 	border-radius: 8px;
 	border-color: #5694f7;
 	background: green;
-	margin-left: 5px;
+	margin: 0 0 5px 5px;
 	color: #fff;
 	font-size: 32px;
 }
 #form input, textarea{
+	box-sizing: border-box;
 	background: rgba(0, 204, 255, 0.7);
 	border-color: #ff0;
 	border-radius: 8px;
@@ -295,6 +295,49 @@ input[type="radio"]{
 
 #form textarea{
 	margin-left: 5px;
+}
+
+#content-7 h3{
+	font-size: 45px;
+	color: #fff;
+	font-family: 'Pompiere', cursive;
+	font-weight: bold;
+	margin-left: 150px;
+	text-decoration: underline;
+}
+
+.project-image{
+	height: 100%;
+	width: 100%;
+	/*margin: 10px 0 10px 40px;*/
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+}
+
+.project-image:hover{
+	transform: scaleX(1.1);
+}
+
+.project-image-modal{
+	height: 550px;
+	width: 550px;
+}
+
+.description{
+	/*text-align: center;*/
+	color: #fff;
+}
+
+.projects{
+	border: 2px solid #ff0;
+	border-radius: 5px;
+	margin: 20px;
+	text-align: center;
+	height: 150px;
+}
+.footer{
+	text-align: center;
+	font-size: 25px;
 }
 
 
@@ -468,4 +511,11 @@ input[type="radio"]{
 		background-size: cover;	
 		margin-top: 2px;
 	}
+
+	#form input{
+		width: 60%;
+	}
+
+	#form textarea {
+		width: 75%;
 }

@@ -9,7 +9,8 @@
 	<script src="js/email-validator.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
 	<title>Subash Pradhan - Portfolio</title>
@@ -21,6 +22,7 @@
 			<source src="videos/Working-Man.webm" type="video/webm">
 		</video>
 	</div>	
+
 	<nav class="navbar-fixed">
 		<div id="homesection" >
 			<div id="navbar">
@@ -45,6 +47,7 @@
 			</div>
 		</div>
 	</nav>
+
 	<header>		
 		<div class="container">	
 			<div class="row page-1">
@@ -188,41 +191,203 @@
 			</div>
 		</div>	
 	</section>
+
 	<section id="contact-page">
 		<div class="container">
 			<div id="contactsection" class="row page-4">
 				<h2>CONTACT - ME</h2>
 				<hr>
 				<div id="content-6" class="col-lg-6">
-					<span class="straight-line">
-						CONTACT ME
-					</span>
-					<form method="POST" name="contactform" action="http://www.elwebman.nl/subash/myphp.php" id="form">
-						<p class="form-para">
-							Full Name * :
-						</p>	
-						<input id="Full-Name" type="text" name="name" value=" " />
+					<div class="form-page">
+						<span class="straight-line">
+							CONTACT ME
+						</span>
+						
+						<form method="POST" name="contactform" action="http://www.elwebman.nl/subash/myphp.php" id="form">
+							<p class="form-para">
+								Full Name * :
+							</p>	
+							<input id="Full-Name" type="text" name="name" value=" " />
 
-						<p class="form-para">
-							Your E-mail Address * :
-						</p>	
-						<input id="Email" type="text" name="email" value=" " size="30" />
+							<p class="form-para">
+								Your E-mail Address * :
+							</p>	
+							<input id="Email" type="text" name="email" value=" " size="30" />
 
-						<p class="form-para">
-							Write your message here:
-						</p>	 
+							<p class="form-para">
+								Write your message here:
+							</p>	 
 
-						<textarea rows="5" cols="35" name="message" id="textarea_1"></textarea><br>
-						<!-- <input id="submit-button" type="button" value="submit"> -->
-						<button id="submit-button">Send Message</button>
-					</form>
+							<textarea rows="5" cols="35" name="message" id="textarea_1"></textarea><br>
+							<!-- <input id="submit-button" type="button" value="submit"> -->
+							<button id="submit-button">Send Message</button>
+						</form>
+					</div>
 				</div>
-				
+
+				<div id="content-7" class="col-lg-6">
+					<div class="container">
+						<h3>My-Portfolios</h3>
+						<div class="row" id="modal-page">
+							
+							<div class="projects col-lg-2">
+								<img class="project-image" src="images/project-1.png" alt="project-1" data-toggle="modal" data-target="#myModal">
+								<div class="description">
+									Movie-App
+								</div>
+							</div>	
+							
+							<div class="modal fade" id="myModal" role="dialog">
+        						<div class="modal-dialog">
+        							<div class="modal-content">
+           								<div class="modal-header">
+              								<button type="button" class="close" data-dismiss="modal">&times;</button>
+              								<h4 class="modal-title">AJAX Movie App</h4>
+          								</div>
+          								<div class="modal-body">
+          									<img class="project-image-modal" src="images/project-1.png" alt="project-1">
+          								</div>	
+          								<div class="modal-footer">
+              								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              							</div>	
+          							</div>
+          						</div>	
+          					</div>	
+
+
+							<div class="projects col-lg-2">
+								<img class="project-image" src="images/project-2.png" alt="project-1" data-target="#myModal-2" data-toggle="modal">
+								<div class="description">
+									Business-Website
+								</div>
+							</div>	
+							
+							<div class="modal fade" id="myModal-2" role="dialog">
+        						<div class="modal-dialog">
+        							<div class="modal-content">
+           								<div class="modal-header">
+              								<button type="button" class="close" data-dismiss="modal">&times;</button>
+              								<h4 class="modal-title">Business Website</h4>
+          								</div>
+          								<div class="modal-body">
+          									<img class="project-image-modal" src="images/project-2.png" alt="project-2">
+          								</div>	
+          								<div class="modal-footer">
+              								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              							</div>	
+          							</div>
+          						</div>	
+          					</div>	
+							
+
+							<div class=" projects col-lg-2">
+								<img class="project-image" src="images/project-3.png" alt="project-3" data-target="#myModal-3" data-toggle="modal">
+								<div class="description">
+									Sass Practice
+								</div>	
+							</div>
+							<div class="modal fade" id="myModal-3" role="dialog">
+        						<div class="modal-dialog">
+        							<div class="modal-content">
+           								<div class="modal-header">
+              								<button type="button" class="close" data-dismiss="modal">&times;</button>
+              								<h4 class="modal-title">Sass Practice</h4>
+          								</div>
+          								<div class="modal-body">
+          									<img class="project-image-modal" src="images/project-3.png" alt="Sass Practice">
+          								</div>	
+          								<div class="modal-footer">
+              								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              							</div>	
+          							</div>
+          						</div>	
+          					</div>	
+							
+						</div>
+						<div class="row">
+
+							<div class="projects col-lg-2">
+								<img class="project-image" src="images/project-4.png" alt="project-4" data-target="#myModal-4" data-toggle="modal">
+								<div class="description">
+									Mobile-first
+								</div>
+							</div>
+
+							<div class="modal fade" id="myModal-4" role="dialog">
+        						<div class="modal-dialog">
+        							<div class="modal-content">
+           								<div class="modal-header">
+              								<button type="button" class="close" data-dismiss="modal">&times;</button>
+              								<h4 class="modal-title">Mobile Frist</h4>
+          								</div>
+          								<div class="modal-body">
+          									<img class="project-image-modal" src="images/project-4.png" alt=project-4>
+          								</div>	
+          								<div class="modal-footer">
+              								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              							</div>	
+          							</div>
+          						</div>	
+          					</div>
+
+          					<div class="projects col-lg-2">
+								<img class="project-image" src="images/project-5.png" alt="project-5" data-target="#myModal-5" data-toggle="modal">
+								<div class="description">
+									Cause-Website
+								</div>
+							</div>
+							<div class="modal fade" id="myModal-5" role="dialog">
+        						<div class="modal-dialog">
+        							<div class="modal-content">
+           								<div class="modal-header">
+              								<button type="button" class="close" data-dismiss="modal">&times;</button>
+              								<h4 class="modal-title">Cause Website</h4>
+          								</div>
+          								<div class="modal-body">
+          									<img class="project-image-modal" src="images/project-5.png" alt=project-5>
+          								</div>	
+          								<div class="modal-footer">
+              								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              							</div>	
+          							</div>
+          						</div>	
+          					</div>
+
+							<div class="projects col-lg-2">
+								<img class="project-image" src="images/project-6.png" alt="project-6" data-target="#myModal-6" data-toggle="modal">
+								<div class="description">
+									Class-Project
+								</div>
+							</div>	
+          					<div class="modal fade" id="myModal-6" role="dialog">
+        						<div class="modal-dialog">
+        							<div class="modal-content">
+           								<div class="modal-header">
+              								<button type="button" class="close" data-dismiss="modal">&times;</button>
+              								<h4 class="modal-title">Project</h4>
+          								</div>
+          								<div class="modal-body">
+          									<img class="project-image-modal" src="images/project-6.png" alt=project-6>
+          								</div>	
+          								<div class="modal-footer">
+              								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              							</div>	
+          							</div>
+          						</div>	
+          					</div>	
+
+						</div>
+					</div>	
+				</div>
 			</div>
-			
-		</div>
-		
+		</div>		
 	</section>
 
+	<section id="footer-page">
+		<div class="container footer">
+			Copyright @ Subash Pradhan...
+			
+		</div>		
+	</section>
 </body>
 </html>

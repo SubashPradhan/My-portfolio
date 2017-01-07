@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-// effect for search bar:	
-$('.search').focusin(function() {
-	$('#navbar a').fadeOut(1500);
-	$('.search').css('width', '300px');
-});
+	// effect for search bar:	
+	$('.search').focusin(function() {
+		$('#navbar a').fadeOut(1500);
+		$('.search').css('width', '300px');
+	});
 
-$('.search').focusout(function() {
-	$('#navbar a').fadeIn(3000);
-	$('.search').css('width', '200px');
-});
+	$('.search').focusout(function() {
+		$('#navbar a').fadeIn(3000);
+		$('.search').css('width', '200px');
+	});
 
 	// typing text effect with library:
 	$("#content-1").typed({
@@ -78,6 +78,11 @@ $('.search').focusout(function() {
 		}
 	});
 
+	if ($(window).width() < 1200) {
+		$('#form input').css('width', '100%');
+	}
+
+	//contact-form validator:
 	var frmvalidator = new Validator("contactform");
 	frmvalidator.addValidation("name", "req", "Please provide your name");
 	frmvalidator.addValidation("email", "req", "Please provide your email");
