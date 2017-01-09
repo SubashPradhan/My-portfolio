@@ -71,16 +71,16 @@ $(document).ready(function() {
 	});
 
 	$('.icon').click(function() {
-		$('#navbar').addClass('navbar-height');
 		if($('.topnav').hasClass('topnav')){
 			$('.topnav').toggleClass('responsive');
+
 
 		}
 	});
 
-	if ($(window).width() < 1200) {
-		$('#form input').css('width', '100%');
-	}
+	// if ($(window).width() < 1200) {
+	// 	$('#form input').css('width', '100%');
+	// }
 
 	//contact-form validator:
 	var frmvalidator = new Validator("contactform");
