@@ -70,6 +70,7 @@ $(document).ready(function() {
 
 	});
 
+	//responsive navigation
 	$('.icon').click(function() {
 		if($('.topnav').hasClass('topnav')){
 			$('.topnav').toggleClass('responsive');
@@ -77,10 +78,6 @@ $(document).ready(function() {
 
 		}
 	});
-
-	// if ($(window).width() < 1200) {
-	// 	$('#form input').css('width', '100%');
-	// }
 
 	//contact-form validator:
 	var frmvalidator = new Validator("contactform");
