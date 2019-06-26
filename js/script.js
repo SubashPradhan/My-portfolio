@@ -33,7 +33,6 @@ $(document).ready(function() {
 			var currentScroll = $(this).scrollTop();
 			if (currentScroll < previousScroll) {
 				$('#navbar').fadeIn(1000);
-
 			} else {
 				$('#navbar').fadeOut();
 
@@ -74,8 +73,6 @@ $(document).ready(function() {
 	$('.icon').click(function() {
 		if($('.topnav').hasClass('topnav')){
 			$('.topnav').toggleClass('responsive');
-
-
 		}
 	});
 
